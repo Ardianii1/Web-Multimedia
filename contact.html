@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" href="img/call.png">
+    <style>
+    .error {
+        color: #FF0000;
+    }
+    </style>
+</head>
+<header class="header">
+    <div class="apc">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart">🛒</a>
+  </div>
+  </header>
+<body>
+
+    <div class="div1">
+        <div class="kontainer">
+
+            <div class="contactinfo">
+                <div>
+                    <h2 class="h2">Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/location.png" alt="1"></span>
+                            <span>Prishtine.</span>
+                        </li>
+                        <li>
+                            <span><img src="img/mail.png" alt="2"></span>
+                            <span>info@xtreme.com</span>
+                        </li>
+                        <li>
+                            <span><img src="img/call.png" alt="3"></span>
+                            <span>+0123456789</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com"><img src="img/1.png" alt="5"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="img/2.png" alt="4"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="img/3.png" alt="3"></a></li>
+                    <li><a href="https://www.linkedin.com"><img src="img/5.png" alt="1"></a></li>
+                </ul>
+            </div>
+            <form class="contactForm" method="POST"  onsubmit="sendEmail()">
+                <h2 class="h2">Send a Message</h2>
+                <span class="error">* required field</span>
+                <div class="formBox">
+
+                    <div class="inputBox w50">
+                        <input type="text" name="username" id="username" placeholder="Username"
+                            value="">
+                        <!-- <span class="span">First Name</span> -->
+                        <p id="usererror" class="text-danger font-weight-bold"></p>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="lastname" id="lastname" placeholder="Lastname"
+                            value="">
+                        <!-- <span class="span">Lastname</span> -->
+                        <p id="lastnameerror" class="text-danger font-weight-bold"></p>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="email" id="email" placeholder="Email address"
+                            value="">
+                        <!-- <span class="span">Email</span> -->
+                        <p id="emailerror" class="text-danger font-weight-bold"></p>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="tel" name="number" id="number" placeholder="Phone number"
+                            value="">
+                        <!-- <span class="span">Number</span> -->
+                        <p id="numbererror" class="text-danger font-weight-bold"></p>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea name="textarea" id="textarea" placeholder="How we can help you?"></textarea>
+                    </div>
+                    <div class="inputBox w100">
+                        <button type="submit" name="submit" value="Submit">Send</button>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="about.php#company">Company</a></li>
+                            <li><a href="about.php#team">Team</a></li>
+                            <li><a href="about.php#terms">Terms&Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="products.php#samsung">Samsung</a></li>
+                            <li><a href="products.php#lenovo">Lenovo</a></li>
+                            <li><a href="products.php#apple">Apple</a></li>
+                            <li><a href="products.php#">See more..</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Online shoping</a></li>
+                            <li><a href="#">Repair&Upgrade</a></li>
+                            <li><a href="#">Second hand</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.twitter.com"><i class="icon ion-social-twitter"></i></a>
+                        <a href="https://www.linkedin.com"><i class="icon ion-social-linkedin"></i></a>
+                        <a href="https://www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                        <a href="https://www.github.com"><i class="icon ion-social-github"></i></a>
+                        <p class="copyright"><i>XTREME © 2022</i> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
